@@ -47,7 +47,7 @@ Son aquellos elementos electrónicos con la capacidad de almacenar gran cantidad
 Existen diferentes tipos de memorias y cada una posee diferentes tipos de características basados en su capacidad, velocidad, direccionamiento, prioridad, etc. En un computador encontramos las siguientes:
 
 \subsection{Memoria Cache L1, L2 y L3: }
-Ubicada dentro del procesador, su existencia se basa en la necesidad de memorias que igualen la velocidad de procesamiento de la CPU. Debido a su alto costo de construcción son de menor capacidad de almacenamiento. Cada nivel va desde el más rápido al mas lento, y del con menor capacidad al con mayor capacidad (L1 a L3 en ambos casos).
+Ubicada dentro del procesador, su existencia se basa en la necesidad de memorias que igualen la velocidad de procesamiento de la CPU. Debido a su alto costo de construcción son de menor capacidad de almacenamiento. Cada nivel va desde el más rápido al mas lento, y del con menor capacidad al con mayor capacidad (L1 a L3 en ambos casos). \cite{augusto}
 
 \subsection{Memoria RAM: }
 La Memoria de Acceso Aleatorio (Random Access Memory) o memoria principal es la encargada de almacenar la información y las instrucciones con las que el procesador trabaja en tiempo real. Su nombre se debe a que se puede acceder a sus datos indistintamente de su posición o dirección, es decir, no se debe leer en un orden concreto para llegar a la información solicitada. Este tipo de memoria es mas lenta que la memoria Cache, pero posee sustancialmente mayor capacidad de almacenamiento. La RAM es de tipo volátil, esto significa que lo que allí se almacena solo existe mientras esté conectada a una fuente de energía, cuando un computador se apaga, toda la información presente en la memoria RAM desaparece.
@@ -65,11 +65,13 @@ Como se mencionó en la sección \ref{types}, existen diferentes tipos de memori
 
 Podemos apreciar esto de varias formas: los programas y aplicaciones que se necesiten procesar en tiempo real deben estar oportunamente en la memoria principal, si por algún motivo se solicita mas uso o espacio del disponible, el controlador asignará estos datos a su memoria virtual para no saturar le memoria RAM. De igual forma cuando se termina de trabajar con un archivo en específico, el controlador es el encargado de solicitar que se guarde en el disco duro para liberar capacidad de la memoria principal. \cite{gestion}
 
-\section{Memorias rápidas y su importancia}
+\section{Velocidad en las memorias y su importancia}
+
+La gestión de memoria vista en la sección \ref{working}, garantiza un uso eficiente y adecuado de la capacidad que posee cada tipo de memoria, sin embargo, la velocidad no solo depende del tipo de memoria y su función. Todos estos módulos se comunican por medio de pistas de circuito impresas en la placa principal a una velocidad llamada velocidad del bus, más concretamente la velocidad del reloj del bus que une la memoria con el microprocesador. \cite{augusto} La velocidad a la que la información puede ser transmitida depende directamente del número de líneas físicas, a través del cual los datos pueden ser transferidos simultáneamente. Y adicional a esto se le suma el tiempo de lectura que posee cada modulo de memoria. La importancia de todo esto radica en que una mayor velocidad de transferencia de datos y una comunicación eficiente de los módulos de memoria entre todos los componentes de un computador permite ofrecer al usuario una experiencia satisfactoria y sin mayores inconvenientes, como pausas o retrasos al ejecutar programas, sobre todo programas de alto desempeño usados en carreras de ingeniería y simulación física.
 
 
-\section{Conclusiones}
-
+\section{Conclusion}
+Conocer el funcionamiento y los tipos de memoria que conforman la estructura de un computador, nos permite comprender como se maneja la transferencia de datos y como se trabaja con la información que ingresamos y solicitamos al usar maquinas de computo diariamente. Cada memoria tiene su función y características únicas qué, al comunicarse entre ellas de forma ordenada y sincronizada, prometen tratar nuestros datos de forma segura, rápida y eficaz.
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
